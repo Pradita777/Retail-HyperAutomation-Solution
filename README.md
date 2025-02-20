@@ -27,6 +27,8 @@ SolucionHiperautomatizacion/
 ## Requisitos
 1. Tener los siguientes modelos de Ollama corriendo en local:
    ```bash
+   ollama pull nomic-embed-text
+   ollama pull mistral
    ollama list
    ```
    Salida esperada:
