@@ -17,7 +17,7 @@ SolucionHiperautomatizacion/
 │-- embeddings/
 │   └── product_embeddings.faiss  # Índice FAISS de embeddings de productos
 │-- main.py  # Servidor FastAPI para recomendación de productos
-│-- create_faiss.py  # Código para generar el índice FAISS
+│-- generarqmbeddings.py  # Código para generar el índice FAISS
 │-- requirements.txt  # Dependencias del proyecto
 │-- frontend/
 │   ├── index.html  # Interfaz gráfica
