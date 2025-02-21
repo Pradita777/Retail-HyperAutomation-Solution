@@ -4,7 +4,7 @@ document.getElementById("searchForm").addEventListener("submit", async (e) => {
     const resultsDiv = document.getElementById("results");
 
     // 🔹 Mostrar pantalla de carga
-    resultsDiv.innerHTML = `<p id="loading">⏳ Cargando resultados...</p>`;
+    resultsDiv.innerHTML = `<p id="loading">⏳ Loading results...</p>`;
 
     try {
         const response = await fetch("http://127.0.0.1:8000/recommend", {
@@ -24,14 +24,12 @@ function displayResults(data) {
     const resultsDiv = document.getElementById("results");
     resultsDiv.innerHTML = `<h2>Resultados para: ${data.query}</h2>`;
 
-    // Mostrar la respuesta generada por el LLM
-    if (data.llm_response) {
-        const llmDiv = document.createElement("div");
-        llmDiv.innerHTML = `<p><strong>Respuesta LLM:</strong> ${data.llm_response}</p>`;
-        resultsDiv.appendChild(llmDiv);
-    }
+    // Mostrar la respuesta generada por el modelo LLM
+    const llmDiv = document.createElement("div");
+    llmDiv.innerHTML = `<p><strong>LLM Response:</strong> ${data.llm_response}</p>`;
+    resultsDiv.appendChild(llmDiv);
 
-    // Crear tabla para mostrar los candidatos recomendados
+    // Crear tabla de productos recomendados
     const table = document.createElement("table");
     table.innerHTML = `
         <tr>

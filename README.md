@@ -1,84 +1,119 @@
-# Solución Web de Hiperautomatización
+# Hyperautomation Web Solution
 
-Este proyecto es una solución web enfocada en hiperautomatización que utiliza procesamiento de lenguaje natural (LLM) y embeddings para recomendación de productos.
+This project is a web solution focused on hyperautomation that uses natural language processing (LLM) and embeddings for product recommendation.
 
-## Tecnologías Utilizadas
+## Technologies Used
 - **Backend**: FastAPI
 - **Embeddings**: FAISS, SentenceTransformers
-- **Modelos LLM**: Ollama con `mistral` y `all-minilm:33m`
+- **LLM Models**: Ollama with `mistral` and `all-minilm:33m`
 - **Frontend**: HTML + JavaScript
-- **Base de Datos**: CSV + FAISS
+- **Database**: CSV + FAISS
 
-## Estructura del Proyecto
+## Project Structure
 ```
 SolucionHiperautomatizacion/
 │-- data/
-│   └── products.csv  # Archivo de productos con las columnas: Product_ID, Product Name, Category, Description
+│   └── products.csv  # Product file with columns: Product_ID, Product Name, Category, Description
 │-- embeddings/
-│   └── product_embeddings.faiss  # Índice FAISS de embeddings de productos
-│-- main.py  # Servidor FastAPI para recomendación de productos
-│-- generarqmbeddings.py  # Código para generar el índice FAISS
-│-- requirements.txt  # Dependencias del proyecto
+│   └── product_embeddings.faiss  # FAISS index of product embeddings
+│-- main.py  # FastAPI server for product recommendation
+│-- generarqmbeddings.py  # Code to generate the FAISS index
+│-- requirements.txt  # Project dependencies
 │-- frontend/
-│   ├── index.html  # Interfaz gráfica
-│   ├── script.js  # Lógica para interactuar con la API
+│   ├── index.html  # Graphical interface
+│   ├── script.js  # Logic to interact with the API
 ```
 
-## Requisitos
-1. Tener los siguientes modelos de Ollama corriendo en local:
-   ```bash
-   ollama pull nomic-embed-text
-   ollama pull mistral
-   ollama list
-   ```
-   Salida esperada:
-   ```
-   NAME              ID              SIZE      MODIFIED
-   all-minilm:33m    4f5da3bd944d    67 MB     7 hours ago
-   mistral:latest    f974a74358d6    4.1 GB    12 days ago
-   ```
+## Requirements
+1. Have the following Ollama models running locally:
+  ```bash
+  ollama pull nomic-embed-text
+  ollama pull mistral
+  ollama list
+  ```
+  Expected output:
+  ```
+  NAME              ID              SIZE      MODIFIED
+  all-minilm:33m    4f5da3bd944d    67 MB     7 hours ago
+  mistral:latest    f974a74358d6    4.1 GB    12 days ago
+  ```
 
-2. Instalar dependencias:
-   ```bash
-   pip install -r requirements.txt
-   ```
+2. Install dependencies:
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-3. Ejecutar el servidor FastAPI:
-   ```bash
-   uvicorn main:app --reload
-   ```
+3. Run the FastAPI server:
+  ```bash
+  uvicorn main:app --reload
+  ```
 
-4. Abrir `index.html` en un navegador.
+4. Open `index.html` in a browser.
 
-## Endpoints de la API
+## API Endpoints
 ### `POST /recommend`
-- **Descripción**: Recibe una consulta del usuario y recomienda productos basados en embeddings y un modelo LLM.
+- **Description**: Receives a user query and recommends products based on embeddings and an LLM model.
 - **Body (JSON)**:
   ```json
   {
-    "query": "Laptops para programar"
+   "query": "Laptops for programming"
   }
   ```
-- **Respuesta (JSON)**:
+- **Response (JSON)**:
   ```json
-  {
-    "query": "Laptops para programar",
+   {
+    "query": "Laptops for programming",
     "llm_response": "Based on this query, I recommend...",
     "results": [
       {
-        "Product_ID": 101,
-        "Product Name": "Laptop X",
-        "Category": "Computers",
-        "Description": "Powerful laptop for coding",
-        "Similarity": 0.89
+       "Product_ID": 101,
+       "Product Name": "Laptop X",
+       "Category": "Computers",
+       "Description": "Powerful laptop for coding",
+       "Similarity": 0.89
       }
     ]
-  }
-  ```
+   }
+   ```
 
-## Contacto
-Para dudas o mejoras, abre un issue en este repositorio.
+  ## Suggested Prompts
+
+  ### Beverages:
+  - "Looking for a healthy and refreshing drink."
+  - "What are some organic beverage options?"
+
+  ### Electronics:
+  - "I need a good pair of wireless headphones."
+  - "What portable Bluetooth speakers do you recommend?"
+
+  ### Fitness:
+  - "I'm looking for a comfortable yoga mat."
+  - "What are the best products for home workouts?"
+
+  ### Home:
+  - "I need a durable water bottle for daily use."
+  - "What are some good options for home lighting?"
+
+  ### Health:
+  - "I want to try plant-based protein supplements."
+  - "What are some natural health products?"
+
+  ### Accessories:
+  - "I need a stylish leather wallet."
+  - "What are some good accessories for men?"
+
+  ### Sports:
+  - "I'm looking for lightweight running shoes."
+  - "What are the best shoes for outdoor activities?"
+
+  ### Video Games:
+  - "Looking for play video games."
+
+  ### Vehicles:
+  - "What bike should I buy in 2025?"
+
+## Contact
+For questions or improvements, open an issue in this repository.
 
 ---
-¡Gracias por usar esta solución! 🚀
-
+Thank you for using this solution! 🚀

@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Entornos virtuales
+venv/
+.env/
+*.venv
+
+# Archivos de logs y dumps
+*.log
+*.sqlite3
+*.db
+
+# Archivos de dependencias compiladas
+*.so
+*.dll
+*.dylib
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.iml
+
+# Datos generados
+*.faiss
+*.csv
