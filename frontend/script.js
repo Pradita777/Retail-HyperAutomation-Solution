@@ -26,7 +26,7 @@ function displayResults(data) {
 
     // Mostrar la respuesta generada por el modelo LLM
     const llmDiv = document.createElement("div");
-    llmDiv.innerHTML = `<p><strong>LLM Response:</strong> ${data.llm_response}</p>`;
+    llmDiv.innerHTML = `<p>${data.llm_response}</p>`;
     resultsDiv.appendChild(llmDiv);
 
     // Crear tabla de productos recomendados
@@ -35,8 +35,6 @@ function displayResults(data) {
         <tr>
             <th>ID</th>
             <th>Nombre</th>
-            <th>Habilidades</th>
-            <th>Experiencia</th>
             <th>Descripción</th>
             <th>Similitud (%)</th>
         </tr>
@@ -45,10 +43,8 @@ function displayResults(data) {
     data.results.forEach(result => {
         const row = document.createElement("tr");
         row.innerHTML = `
-            <td>${result.Candidate_ID}</td>
-            <td>${result.Candidate_Name}</td>
-            <td>${result.Skills}</td>
-            <td>${result.Experience}</td>
+            <td>${result.ID}</td>
+            <td>${result["Person Name"]}</td>
             <td>${result.Description}</td>
             <td>${(result.Similarity * 100).toFixed(2)}%</td>
         `;

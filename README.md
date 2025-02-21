@@ -13,7 +13,7 @@ This project is a web solution focused on hyperautomation that uses natural lang
 ```
 SolucionHiperautomatizacion/
 │-- data/
-│   └── products.csv  # Product file with columns: Product_ID, Product Name, Category, Description
+│   └── products.csv  # Product file with columns: ID, Person Name, Description
 │-- embeddings/
 │   └── product_embeddings.faiss  # FAISS index of product embeddings
 │-- main.py  # FastAPI server for product recommendation
@@ -66,9 +66,8 @@ SolucionHiperautomatizacion/
     "llm_response": "Based on this query, I recommend...",
     "results": [
       {
-       "Product_ID": 101,
-       "Product Name": "Laptop X",
-       "Category": "Computers",
+       "ID": 101,
+       "Person Name": "Laptop X",
        "Description": "Powerful laptop for coding",
        "Similarity": 0.89
       }

@@ -1,59 +1,57 @@
-Product_ID,Product Name,Category,Description
-1,Frank ocean,Qa expert,The best QA expert in the industry.
-2,Marco rojas,backend developer,Experienced backend developer with expertise in Java and Spring Boot.
-3,hobarlan Uparela,frontend developer,Skilled frontend developer with proficiency in React and Angular.
-4,David Londoño,scrum master, Certified Scrum Master with a track record of successful project deliveries.
-5,Andres Prada,backend developer,not the best but good enough.
-6,Ana Rodríguez,UI/UX designer,Creative UI/UX designer with a passion for user-friendly interfaces.
-7,Juan Pérez,DevOps engineer,Experienced in cloud deployments and CI/CD pipelines.
-8,Laura González,data scientist,Expert in machine learning and big data analytics.
-9,Carlos Méndez,full stack developer,Versatile developer with experience in both frontend and backend.
-10,María López,cybersecurity analyst,Ensures systems are secure against cyber threats.
-11,Santiago Ramírez,cloud architect,Designs scalable and resilient cloud infrastructures.
-12,Lucía Herrera,software engineer,Develops robust software solutions for complex problems.
-13,Diego Torres,QA engineer,Meticulous tester ensuring software quality and reliability.
-14,Valeria Estrada,mobile developer,Specialized in iOS and Android app development.
-15,Andrés Vargas,network administrator,Manages and maintains enterprise network infrastructures.
-16,Carolina Suárez,AI engineer,Develops intelligent systems with deep learning models.
-17,Manuel Díaz,database administrator,Optimizes and secures database performance.
-18,Natalia Correa,IT support specialist,Provides technical assistance and troubleshooting.
-19,Esteban Jiménez,frontend developer,Passionate about responsive and interactive web design.
-20,Paula Restrepo,backend developer,Enjoys building scalable and efficient APIs.
-21,Daniel Castillo,blockchain developer,Develops smart contracts and decentralized applications.
-22,Camila Rivera,game developer,Creates immersive gaming experiences using Unity.
-23,Julián Paredes,embedded systems engineer,Works on firmware and real-time processing.
-24,Marcela Trujillo,system administrator,Keeps IT infrastructure running smoothly.
-25,Ricardo Gutiérrez,ML engineer,Develops machine learning pipelines for AI-driven applications.
-26,Melissa Fuentes,software architect,Designs high-level system structures for scalability.
-27,Fernando Ocampo,product manager,Bridges the gap between business and technology.
-28,Sofía Castaño,IT consultant,Advises businesses on IT strategies and solutions.
-29,Miguel Zuluaga,cloud security engineer,Focuses on securing cloud-based environments.
-30,Andrea Montoya,BI analyst,Transforms raw data into actionable business insights.
-31,Oscar Peña,IoT developer,Connects smart devices to the digital world.
-32,Daniela Rojas,site reliability engineer,Ensures high availability and performance of services.
-33,Jorge Pizarro,software tester,Hunts down bugs to improve software quality.
-34,Valentina Zapata,VR/AR developer,Brings virtual and augmented reality to life.
-35,Guillermo Salazar,ethical hacker,Tests security vulnerabilities to protect systems.
-36,Jessica Vargas,technical writer,Makes complex technical information accessible.
-37,Martín Osorio,robotics engineer,Builds autonomous and intelligent robotic systems.
-38,Elena Carrillo,security engineer,Ensures enterprise security through proactive measures.
-39,Adrián Beltrán,cloud engineer,Specialist in AWS, Azure, and Google Cloud.
-40,Lina Acosta,data engineer,Develops and maintains data pipelines and warehouses.
-41,Fabio Cordero,DevSecOps engineer,Integrates security into DevOps processes.
-42,Vanessa Molina,API developer,Builds RESTful and GraphQL APIs for scalable applications.
-43,Hugo Arévalo,hardware engineer,Designs and tests electronic hardware systems.
-44,Patricia Delgado,software developer,Loves coding and solving technical challenges.
-45,Leonardo Nieto,SaaS engineer,Works on scalable software-as-a-service platforms.
-46,Rebeca Gil,cloud administrator,Manages cloud-based applications and infrastructure.
-47,Germán Patiño,automation engineer,Optimizes workflows with scripting and automation tools.
-48,Luisa Serrano,data analyst,Extracts meaningful insights from complex datasets.
-49,César Méndez,IT project manager,Leads teams to deliver successful IT projects.
-50,Daniel Espinosa,AI researcher,Explores new frontiers in artificial intelligence.
-51,Mariana Quintero,tech support specialist,Solves technical issues with a customer-first approach.
-52,José Ibarra,software engineer,Passionate about clean code and best practices.
-53,Isabel Franco,backend engineer,Builds and optimizes scalable server-side applications.
-54,Gonzalo Ríos,cloud DevOps engineer,Automates and streamlines cloud operations.
-55,Fernanda Ochoa,web developer,Enjoys making beautiful and functional websites.
-56,David Gonzales,Product owner,Experienced Product Owner with a strong business acumen and customer focus.
-57,Mark Zucaritas,top level bot,The most advanced AI bot with natural language processing capabilities.
-58,Chat GPT,chatbot,Conversational chatbot powered by OpenAI's GPT-3 technology.
+ID,Person Name,Description
+1,Frank ocean,El mejor experto en aseguramiento de calidad (QA) de la industria.
+2,Marco rojas,Desarrollador backend experimentado con experiencia en Java y Spring Boot.
+3,hobarlan Uparela,Desarrollador frontend con habilidades en React y Angular.
+4,David Londoño,Scrum Master certificado con un historial de entregas exitosas de proyectos.
+6,Ana Rodríguez,Diseñadora UI/UX creativa con pasión por las interfaces amigables para el usuario.
+7,Juan Pérez,Experto en despliegues en la nube y en pipelines de CI/CD.
+8,Laura González,Especialista en aprendizaje automático y análisis de grandes volúmenes de datos.
+9,Carlos Méndez,Desarrollador versátil con experiencia en frontend y backend.
+10,María López,Garantiza la seguridad de los sistemas contra amenazas cibernéticas.
+11,Santiago Ramírez,Diseña infraestructuras en la nube escalables y resilientes.
+12,Lucía Herrera,Desarrolla soluciones de software robustas para problemas complejos.
+13,Diego Torres,Tester meticuloso que garantiza la calidad y confiabilidad del software.
+14,Valeria Estrada,Especialista en desarrollo de aplicaciones para iOS y Android.
+15,Andrés Vargas,Administra y mantiene infraestructuras de redes empresariales.
+16,Carolina Suárez,Desarrolla sistemas inteligentes con modelos de deep learning.
+17,Manuel Díaz,Optimiza y protege el rendimiento de bases de datos.
+18,Natalia Correa,Brinda asistencia técnica y soluciones a problemas tecnológicos.
+19,Esteban Jiménez,Apasionado por el diseño web interactivo y responsivo.
+20,Paula Restrepo,Disfruta creando APIs escalables y eficientes.
+21,Daniel Castillo,Desarrolla contratos inteligentes y aplicaciones descentralizadas.
+22,Camila Rivera,Crea experiencias de juego inmersivas con Unity.
+23,Julián Paredes,Trabaja en firmware y procesamiento en tiempo real.
+24,Marcela Trujillo,Mantiene la infraestructura de TI funcionando sin problemas.
+25,Ricardo Gutiérrez,Desarrolla flujos de trabajo de machine learning para aplicaciones basadas en IA.
+26,Melissa Fuentes,Diseña arquitecturas de software escalables de alto nivel.
+27,Fernando Ocampo,Conecta el mundo de los negocios con la tecnología.
+28,Sofía Castaño,Asesora a empresas en estrategias y soluciones de TI.
+29,Miguel Zuluaga,Especialista en seguridad para entornos basados en la nube.
+30,Andrea Montoya,Convierte datos en bruto en información de valor para los negocios.
+31,Oscar Peña,Conecta dispositivos inteligentes con el mundo digital.
+32,Daniela Rojas,Garantiza alta disponibilidad y rendimiento en los servicios.
+33,Jorge Pizarro,Detecta y corrige errores para mejorar la calidad del software.
+34,Valentina Zapata,Da vida a experiencias de realidad virtual y aumentada.
+35,Guillermo Salazar,Evalúa vulnerabilidades de seguridad para proteger los sistemas.
+36,Jessica Vargas,Hace que la información técnica compleja sea fácil de entender.
+37,Martín Osorio,Construye sistemas robóticos autónomos e inteligentes.
+38,Elena Carrillo,Garantiza la seguridad empresarial a través de medidas proactivas.
+40,Lina Acosta,Desarrolla y mantiene pipelines y almacenes de datos.
+41,Fabio Cordero,Integra la seguridad en los procesos de DevOps.
+42,Vanessa Molina,Construye APIs RESTful y GraphQL para aplicaciones escalables.
+43,Hugo Arévalo,Diseña y prueba sistemas de hardware electrónico.
+44,Patricia Delgado,Ama programar y resolver desafíos técnicos.
+45,Leonardo Nieto,Trabaja en plataformas de software como servicio (SaaS) escalables.
+46,Rebeca Gil,Administra aplicaciones y estructuras en la nube.
+47,Germán Patiño,Optimiza flujos de trabajo mediante automatización y scripting.
+48,Luisa Serrano,Extrae información valiosa a partir de conjuntos de datos complejos.
+49,César Méndez,Lidera equipos para la entrega exitosa de proyectos de TI.
+50,Daniel Espinosa,Explora nuevas fronteras en inteligencia artificial.
+51,Mariana Quintero,Resuelve problemas técnicos con un enfoque centrado en el cliente.
+52,José Ibarra,Apasionado por el código limpio y las mejores prácticas.
+53,Isabel Franco,Desarrolla y optimiza aplicaciones backend escalables.
+54,Gonzalo Ríos,Automatiza y optimiza operaciones en la nube.
+55,Fernanda Ochoa,Disfruta creando sitios web hermosos y funcionales.
+56,David Gonzales,Product Owner experimentado con gran visión de negocio y enfoque en el cliente.
+57,Mark Zucaritas,El bot de inteligencia artificial más avanzado con capacidades de procesamiento de lenguaje natural.
+58,Chat GPT,Chatbot conversacional impulsado por la tecnología GPT-3 de OpenAI.

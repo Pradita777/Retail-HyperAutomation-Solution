@@ -94,6 +94,9 @@ main {
 
 /* Pie de página */
 footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     background-color: #007acc;
     color: #fff;
     text-align: center;

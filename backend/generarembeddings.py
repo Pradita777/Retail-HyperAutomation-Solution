@@ -16,7 +16,7 @@ df = pd.read_csv(csv_path)
 descriptions = df["Description"].tolist()
 
 # Generate embeddings
-model = SentenceTransformer('all-MiniLM-L6-v2')  # all-MiniLM model
+model = SentenceTransformer('nomic-ai/nomic-embed-text-v1', trust_remote_code=True)  # all-MiniLM model
 embeddings = model.encode(descriptions)
 
 # Normalize the embeddings
@@ -28,7 +28,13 @@ index = faiss.IndexFlatIP(dimension)  # Using Inner Product for cosine similarit
 index.add(np.array(embeddings).astype('float32'))
 
 # Build the relative path to save the FAISS index
-faiss_index_path = os.path.join(current_dir, "embeddings", "product_embeddings.faiss")
+embeddings_dir = os.path.join(current_dir, "embeddings")
+
+# Create embeddings directory if it doesn't exist
+if not os.path.exists(embeddings_dir):
+    os.makedirs(embeddings_dir)
+
+faiss_index_path = os.path.join(embeddings_dir, "product_embeddings.faiss")
 
 # Save the FAISS index
 faiss.write_index(index, faiss_index_path)
