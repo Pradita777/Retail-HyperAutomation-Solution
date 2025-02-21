@@ -9,7 +9,7 @@ import os
 current_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Build the relative path to the CSV file
-csv_path = os.path.join(current_dir, "data", "products.csv")
+csv_path = os.path.join(current_dir, "data", "candidatos.csv")
 
 # Load data
 df = pd.read_csv(csv_path)
@@ -34,7 +34,7 @@ embeddings_dir = os.path.join(current_dir, "embeddings")
 if not os.path.exists(embeddings_dir):
     os.makedirs(embeddings_dir)
 
-faiss_index_path = os.path.join(embeddings_dir, "product_embeddings.faiss")
+faiss_index_path = os.path.join(embeddings_dir, "candidatos_embeddings.faiss")
 
 # Save the FAISS index
 faiss.write_index(index, faiss_index_path)

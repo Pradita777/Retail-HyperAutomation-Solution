@@ -4,7 +4,7 @@ document.getElementById("searchForm").addEventListener("submit", async (e) => {
     const resultsDiv = document.getElementById("results");
 
     // 🔹 Mostrar pantalla de carga
-    resultsDiv.innerHTML = `<p id="loading">⏳ Loading results...</p>`;
+    resultsDiv.innerHTML = `<p id="loading">⏳ Cargando resultados...</p>`;
 
     try {
         const response = await fetch("http://127.0.0.1:8000/recommend", {

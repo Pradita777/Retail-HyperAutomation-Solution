@@ -19,10 +19,9 @@ app.add_middleware(
 )
 
 # Load data and embeddings model
-df = pd.read_csv("data/products.csv")
-# model = SentenceTransformer('all-MiniLM-L6-v2')
-model = SentenceTransformer('nomic-ai/nomic-embed-text-v1', trust_remote_code=True)  # all-MiniLM model
-index = faiss.read_index("embeddings/product_embeddings.faiss")
+df = pd.read_csv("data/candidatos.csv")
+model = SentenceTransformer('nomic-ai/nomic-embed-text-v1', trust_remote_code=True)  # nomic-embed-text
+index = faiss.read_index("embeddings/candidatos_embeddings.faiss")
 
 def query_ollama(prompt: str) -> str:
     try:
