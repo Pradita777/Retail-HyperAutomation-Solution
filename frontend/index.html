@@ -1,17 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retail Recommendation</title>
+    <title>Recomendación de Candidatos</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Product Recommendation</h1>
-    <form id="searchForm">
-        <input type="text" id="query" placeholder="Search products...">
-        <button type="submit">Search</button>
-    </form>
-    <div id="results"></div>
-    <script src="script.js"></script>
+    <header>
+        <h1>Sistema de Recomendación de Candidatos</h1>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Buscar Candidatos</h2>
+            <p>Ingresa las aptitudes o características que buscas en un candidato, y nuestro sistema te recomendará los perfiles que más se ajusten.</p>
+        </section>
+        <section class="search-section">
+            <form id="searchForm">
+                <input type="text" id="query" name="query" placeholder="Ej. Python, RPA, Data Analysis" required>
+                <button type="submit">Buscar</button>
+            </form>
+        </section>
+        <section id="results" class="results">
+            <!-- Aquí aparecerán los resultados -->
+        </section>
+    </main>
+    <footer>
+        <p>Recomendación de Candidatos - Hiperautomatizaciones</p>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

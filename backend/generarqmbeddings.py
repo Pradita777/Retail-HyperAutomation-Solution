@@ -4,7 +4,7 @@ import faiss
 import numpy as np
 
 # Cargar datos
-df = pd.read_csv(r"C:\Semestre9\ProcesosModernos\SolucionHiperautomatizacion\backend\data\products.csv")
+df = pd.read_csv(r"C:\Users\hvera\Documents\projects\Retail-HyperAutomation-Solution\backend\data\products.csv")
 descriptions = df["Description"].tolist()
 
 # Generar embeddings
@@ -20,4 +20,4 @@ index = faiss.IndexFlatIP(dimension)  # Usamos Inner Product para similitud del 
 index.add(np.array(embeddings).astype('float32'))
 
 # Guardar el índice FAISS
-faiss.write_index(index, r"C:\Semestre9\ProcesosModernos\SolucionHiperautomatizacion\backend\embeddings\product_embeddings.faiss")
+faiss.write_index(index, r"C:\Users\hvera\Documents\projects\Retail-HyperAutomation-Solution\backend\embeddings\product_embeddings.faiss")

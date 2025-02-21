@@ -74,6 +74,7 @@ async def recommend(request: Request):
             "Similarity": similarity
         })
 
+    print(results)
     # 4️⃣ Llamar a Ollama para generar respuesta
     ollama_prompt = f"Based on this query: '{query}', what recommendations can you give?"
     llm_text = query_ollama(ollama_prompt)

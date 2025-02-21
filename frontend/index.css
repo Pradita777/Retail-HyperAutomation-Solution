@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Encabezado */
+header {
+    background-color: #007acc;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+/* Contenedor principal */
+main {
+    max-width: 900px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+}
+
+/* Sección de introducción */
+.intro {
+    margin-bottom: 1.5em;
+}
+
+.intro h2 {
+    margin-bottom: 0.5em;
+}
+
+/* Sección de búsqueda */
+.search-section form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.search-section input[type="text"] {
+    width: 70%;
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 0.5em;
+}
+
+.search-section button {
+    padding: 0.7em 1.5em;
+    border: none;
+    background-color: #007acc;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-section button:hover {
+    background-color: #005fa3;
+}
+
+/* Sección de resultados */
+.results {
+    margin-top: 1em;
+}
+
+.results h2 {
+    margin-bottom: 1em;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+.results th, .results td {
+    padding: 0.8em;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.results th {
+    background-color: #007acc;
+    color: #fff;
+}
+
+/* Pie de página */
+footer {
+    background-color: #007acc;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
