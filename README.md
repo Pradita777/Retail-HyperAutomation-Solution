@@ -76,41 +76,7 @@ SolucionHiperautomatizacion/
    }
    ```
 
-  ## Suggested Prompts
 
-  ### Beverages:
-  - "Looking for a healthy and refreshing drink."
-  - "What are some organic beverage options?"
-
-  ### Electronics:
-  - "I need a good pair of wireless headphones."
-  - "What portable Bluetooth speakers do you recommend?"
-
-  ### Fitness:
-  - "I'm looking for a comfortable yoga mat."
-  - "What are the best products for home workouts?"
-
-  ### Home:
-  - "I need a durable water bottle for daily use."
-  - "What are some good options for home lighting?"
-
-  ### Health:
-  - "I want to try plant-based protein supplements."
-  - "What are some natural health products?"
-
-  ### Accessories:
-  - "I need a stylish leather wallet."
-  - "What are some good accessories for men?"
-
-  ### Sports:
-  - "I'm looking for lightweight running shoes."
-  - "What are the best shoes for outdoor activities?"
-
-  ### Video Games:
-  - "Looking for play video games."
-
-  ### Vehicles:
-  - "What bike should I buy in 2025?"
 
 ## Contact
 For questions or improvements, open an issue in this repository.
